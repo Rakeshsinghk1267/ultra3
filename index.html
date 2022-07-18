@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+<!-- ChatBot -->
+<link rel="stylesheet" type="text/css" href="css/jquery.convform.css">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.convform.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+</head>
+<body>
+<!-- ChatBot -->
+<div class="chat_icon">
+	<i class="fa fa-comments" aria-hidden="true"></i>
+</div>
+
+<div class="chat_box">
+	<div class="my-conv-form-wrapper">
+		<form action="" method="GET" class="hidden">
+
+      <select data-conv-question="Hello! How can I help you" name="category">
+        <option value="WebDevelopment">CANCER RELATED QUERRY</option>
+        <option value="DigitalMarketing">TESTS</option>
+      </select>
+
+      <div data-conv-fork="category">
+        <div data-conv-case="WebDevelopment">
+          <input type="text" name="domainName" data-conv-question="Please, ENTER YOUR CANCER TYPE">    
+        </div>
+        <div data-conv-case="DigitalMarketing" data-conv-fork="first-question2">
+          <input type="text" name="companyName" data-conv-question="Please, ENTER YOUR TEST NAME "> 
+        </div>
+      </div>
+
+      <input type="text" name="name" data-conv-question="Please, Enter your name">
+
+      <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
+
+      <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
+
+      <select data-conv-question="Please Conform">
+        <option value="Yes">Conform</option>
+      </select>
+
+  	</form>
+	</div>
+</div>
+<!-- ChatBot end -->
+
+<header class="header">
+	<div class="container-fluid">
+		<div class="row d-flex justify-content-between">
+			<div class="col-md-auto">
+				<a href="#!" class="logo"><img src="images/logo.png" alt="logo"></a>
+			</div>
+			<div class="col-md-auto">
+				<nav class="main_nav">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About Us</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact Us</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>		
+	</div>
+</header>	
+
+<div class="banner d-flex align-items-center" style="background-image: url('images/banner.jpg');" id="home">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<div class="banner_cont">
+					<h1>CHAT BOT</h1>
+					<p>THE ULTRA THERAPEUTICS </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>			
+
+</body>
+</html>
